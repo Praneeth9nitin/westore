@@ -3,7 +3,7 @@
 import React from 'react'
 import {useLottie} from "lottie-react"
 
-function Lottie() {
+export function Lottie() {
     const view = useLottie({
         animationData: require('../assets/animation.json'),
         loop: true,
@@ -15,5 +15,3 @@ function Lottie() {
     </div>
   )
 }
-
-export default Lottie

@@ -1,7 +1,7 @@
 import React from 'react'
 import hero from '../../assets/hero.png'
 import Image from 'next/image'
-import Lottie from '@/components/Lottie'
+import {Lottie} from '@/components/Lottie'
 
 function layout({children}: {children: React.ReactNode}) {
   return (
@@ -14,7 +14,7 @@ function layout({children}: {children: React.ReactNode}) {
         <div className='dark:text-eblue text-white text-3xl font-bold text-center' >Best place to manage your files</div>
         <Lottie />
       </div>
-      <div>{children}</div>
+      <div className='w-screen'>{children}</div>
     </div>
   )
 }
