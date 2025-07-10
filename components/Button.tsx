@@ -13,13 +13,13 @@ export default function Button({children,className,route,func}:{children:ReactNo
     return <ButtonUI onClick={()=>click(func,`${route}`,router)} className={`${className} cursor-pointer`} >{children}</ButtonUI>
 }
 
-function click(func:any,route:string,router:AppRouterInstance) {
-    if(func)
-        func()
-    if(route === 'signin'){
-        signIn()
+async function click(func:any,route:string,router:AppRouterInstance) {
+    if(route === 'signin') {
+        await signIn()
     }
-    else{
-        router.push(route)
+    if(func){
+        const user = await func()
+        if(!user) return {msg: "please check credentials"}
     }
+    router.push(route)
 }

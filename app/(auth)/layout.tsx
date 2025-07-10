@@ -6,7 +6,7 @@ import {Lottie} from '@/components/Lottie'
 function layout({children}: {children: React.ReactNode}) {
   return (
     <div className='flex font-family' >
-      <div className='flex flex-col justify-around bg-eblue dark:bg-darksupport items-center h-screen px-14 m-0'>
+      <div className='md:flex flex-col hidden w-1/2 justify-around bg-eblue dark:bg-darksupport items-center h-screen px-14 m-0'>
         <div className='flex items-center'>
             <Image src={hero} width={150} alt="hero" />
             <div className='text-5xl font-extrabold'>WeStore</div>

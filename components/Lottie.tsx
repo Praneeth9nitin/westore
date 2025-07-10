@@ -15,3 +15,16 @@ export function Lottie() {
     </div>
   )
 }
+
+export function Lottie2() {
+    const view = useLottie({
+        animationData: require('../assets/circle-loader.json'),
+        loop: true,
+        autoplay: true,
+    })
+  return (
+    <div className='w-11'>
+      {view.View}
+    </div>
+  )
+}

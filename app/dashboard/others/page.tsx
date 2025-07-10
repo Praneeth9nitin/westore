@@ -1,10 +1,9 @@
-import AuthForm from '@/components/SignupAuth'
 import React from 'react'
 
 function page() {
   return (
-    <div className=''>
-      <AuthForm />
+    <div>
+      other
     </div>
   )
 }
